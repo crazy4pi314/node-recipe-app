@@ -26,7 +26,10 @@ router.get('/recipes/:id', async (req, res) => {
 router.post('/recipes', async (req, res) => {
 	const db = await getDbConnection()
 	const { title, ingredients, method } = req.body
-	await db.run('INSERT INTO recipes (title, ingredients, method) VALUES (?, ?, ?)', [title, ingredients, method])
+	if (!title || !title.trim()) {
+		return res.status(400).json({ error: 'Title is required' })
+	}
+	await db.run('INSERT INTO recipes (title, ingredients, method) VALUES (?, ?, ?)', [title.trim(), ingredients, method])
 	res.redirect('/recipes')
 })
 
