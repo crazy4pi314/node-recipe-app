@@ -65,7 +65,7 @@ main {
 .btn {
 	display: inline-block;
 	padding: 0.5rem 1rem;
-	background-color: #3498db;
+	background-color: #ff00ff;
 	color: white;
 	text-decoration: none;
 	border: none;
@@ -76,32 +76,32 @@ main {
 }
 
 .btn:hover {
-	background-color: #2980b9;
+	background-color: #cc00cc;
 }
 
 .btn-primary {
-	background-color: #3498db;
+	background-color: #ff00ff;
 }
 
 .btn-primary:hover {
-	background-color: #2980b9;
+	background-color: #cc00cc;
 }
 
 .btn-secondary {
-	background-color: #95a5a6;
+	background-color: #ff00ff;
 }
 
 .btn-secondary:hover {
-	background-color: #7f8c8d;
+	background-color: #cc00cc;
 }
 
 .btn-danger {
-	background-color: #e74c3c;
+	background-color: #ff00ff;
 	height: 100%;
 }
 
 .btn-danger:hover {
-	background-color: #c0392b;
+	background-color: #cc00cc;
 }
 
 .btn-sm {
