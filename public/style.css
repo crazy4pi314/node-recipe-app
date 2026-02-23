@@ -51,6 +51,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	background-color: #34495e;
+	color: lime;
 }
 
 /* Main content */
@@ -232,7 +233,7 @@ main {
 }
 
 .recipe-card h3 a:hover {
-	color: #3498db;
+	color: lime;
 }
 
 .recipe-preview {
